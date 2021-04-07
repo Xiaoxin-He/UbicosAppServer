@@ -178,13 +178,7 @@ var loadPage = function(pageNum, pageContainer, successFn, notFoundFn) {
             bindActivityButtons();
             hoverButtonMessage();
         },
-        function(xhr, ajaxOptions, thrownError) { <<
-            << << < HEAD
-                ===
-                === =
-
-                >>>
-                >>> > shirley
+        function(xhr, ajaxOptions, thrownError) { 
             if (xhr.status == 404) {
                 console.dir('Page not found');
                 if (notFoundFn) {
