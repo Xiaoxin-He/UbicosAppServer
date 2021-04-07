@@ -467,16 +467,10 @@ var bindActivityButtons = function() {
             $(`#dropdown-fam option:contains(${ user_inputed_personality_fam })`).attr('selected', true);
         }
 
-        // console.log($(`#dropdown-msc option:contains(${ user_inputed_personality_msc })`).text());
-
 
         $('.dropdown_btn').on('change', function(e) {
             console.log($(`#${ e.currentTarget.id } :selected`).text());
-            console.log($(`#${ e.currentTarget.id } :selected`).text().length);
-            // $("#select_tmp_option").html($(`#${ e.currentTarget.id } :selected`).text());
-            // console.log('width', $("#select_tmp").width());
             $($(this)).width($(`#${ e.currentTarget.id }`).width());
-            // console.log($(this))
         });
 
     });
